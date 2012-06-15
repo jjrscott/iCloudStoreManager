@@ -59,7 +59,7 @@ typedef enum {
 #endif
 
 // The delegate confirms when a device has been switched to using either iCloud data or local data
-@property (nonatomic, weak) id<UbiquityStoreManagerDelegate> delegate;
+@property (nonatomic, strong) id<UbiquityStoreManagerDelegate> delegate;
 
 // This property indicates whether the iCloud store or the local store is in use. To
 // change state of this property, use useiCloudStore: method
